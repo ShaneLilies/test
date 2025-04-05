@@ -75,6 +75,7 @@ function updateSchema(req: Request, res: Response, next: NextFunction) {
     const schema = Joi.object({
       firstname: Joi.string().empty(''),
       lastname: Joi.string().empty(''),
+      
       username: Joi.string().empty(''),
     });
     validateRequest(req, next, schema);
